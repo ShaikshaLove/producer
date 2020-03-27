@@ -1,0 +1,16 @@
+server:
+  port: 2010
+
+spring:
+  application:
+    name: Producer
+
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: https://s3rice-eureka-server.herokuapp.com/eureka
+  instance:
+    hostname: https://s3rice-eureka-server.herokuapp.com
